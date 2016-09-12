@@ -1,0 +1,7 @@
+<div class="song">
+  <span><%= @song.title %></span>
+  <%= link_to "Delete", song_path(@song), method: :delete, data: { confirm: "Are you sure?" } %>
+</div>
+<%= @song.artist_name %>
+<%= @song.genre %>
+<%= @song.release_year %>
